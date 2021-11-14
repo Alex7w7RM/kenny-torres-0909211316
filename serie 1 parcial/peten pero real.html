@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <title> peso real </title>
+    <link rel= "stylesheet" href="estilo 2.css";>
+</head>
+
+    <body>
+        <div id="particles-js"></div>
+        
+
+        <form action=""> 
+            <center>
+                <p>Empresa P&P de servicio de transporte de paquetería</p>
+                <h2> Destino del paquete Peten </h2>
+                <p> La distancia que tiene que recorrer el paquete para que llegue a su destino es de 10Kms</p>
+                <h2>Ingresar el peso real del paquete</h2>
+                <input type="text" id="re2">
+                <input  class="boton_1" type="button" value="SUMA" onclick="( re1 (1,2) );">
+            </center>
+               
+
+              
+        </form>
+
+        <script>
+                var re1 = function(re2){      
+                var re2 = parseFloat(document.getElementById("re2").value);  
+                var dis =(0.13);  
+                var dkm= (dis* 460);
+                var prekg= (2.5);
+                alert( "valor de la distacias recorida:" +dkm);
+                var tarip = (  re2 * 2.5) + dkm ;
+                alert ("Su valor total a pagar es de: "+ tarip);
+                                     
+            }
+             
+        </script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>  
+<script src="particulas.js"></script>
+    </body>
+</html>

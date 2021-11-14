@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor=green>
+
+<P>A continuacion se le hace una pregunta escoga una respuesta correcta</P>
+<p>Aproximadamente, ¿cuántos huesos tiene el cuerpo humano?</p>
+<p>Opcion 1: 206</p>
+<p>Opcion 2: 40</p>
+<p>Opcion 3: 390</p>
+<input id="val1" type="text">
+
+<button onclick="myFunction()">Confirma respuesta</button>
+
+
+
+<script>
+function myFunction() {
+    
+    var val1 = document.getElementById("val1").value;
+
+    switch(val1) {
+        case "1":
+            alert("Correcto");
+	    break;
+        case "2":
+	    alert("Incorrecta");
+	    break;
+        case "3":
+	    alert("Incorrecta");
+	    break;
+        default:
+	    alert("No escogiste ninguno de las opciones")
+    }
+    
+}
+</script>
+
+</body>
+</html>
